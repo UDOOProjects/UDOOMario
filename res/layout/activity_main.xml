@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.udoo.udoodroidcondemo.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/face">
+    
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/face_imageView"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/normal"
+        android:contentDescription="@string/description_image" />
+
+    <ImageButton
+        android:id="@+id/twitter_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/description_image"
+        android:background="@drawable/twitter_logo_noclick"/>
+
+   <ImageButton
+        android:id="@+id/voice_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="315dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/nose_up"
+        android:contentDescription="@string/description_image"/>
+
+   <TextView
+       android:id="@+id/twitter_textView"
+       android:layout_width="wrap_content"
+       android:layout_height="150dp"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/balloon"
+       android:gravity="center"
+       android:textColor="@android:color/black"
+       android:textSize="20sp"
+       android:visibility="gone" />
+
+</RelativeLayout>
